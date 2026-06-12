@@ -1,0 +1,40 @@
+create table if not exists inventory_items (
+  id bigserial primary key,
+  inventory_item_id text not null,
+  product text not null,
+  category text,
+  listed_amount numeric default 0,
+  pawned_amount numeric default 0,
+  expected_repayment numeric default 0,
+  sell_amount numeric default 0,
+  profit_loss numeric default 0,
+  sale_date date,
+  date_given date,
+  days_held integer,
+  status text not null default 'Available',
+  sheet_name text not null,
+  sheet_row_number integer not null,
+  pawn_amount_source text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (sheet_name, sheet_row_number)
+);
+
+create table if not exists inventory_sales (
+  id bigserial primary key,
+  inventory_item_id text not null,
+  product text not null,
+  category text,
+  listed_amount numeric not null default 0,
+  pawned_amount numeric not null default 0,
+  expected_repayment numeric not null default 0,
+  sell_amount numeric not null default 0,
+  profit_loss numeric not null default 0,
+  sale_date date,
+  date_given date,
+  days_held integer,
+  sheet_name text not null,
+  sheet_row_number integer not null,
+  pawn_amount_source text,
+  sold_at timestamptz not null default now()
+);

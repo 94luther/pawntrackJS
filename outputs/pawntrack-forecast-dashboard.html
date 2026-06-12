@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PawnTrack Financial Forecasting</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      window.PAWNTRACK_DATA = {
+        syncedAt: "2026-06-10",
+        source: "Google Sheets: NEW ONE",
+        companyOwnedItems: [
+          ["Category","Product","Damages","Listed on Market place","List Date","List amount","Amount paid","Sell amount","Profit/loss","Location"],
+          ["TV","4K 55 INCH FRAMELESS SMART","none","Listed","10/05/2026","2500",null,null,null,"Tlokweng"],
+          ["KITCHEN APPLIANCE","MICROWAVE","none","Listed","10/05/2026","500",null,null,null,"Tlokweng"],
+          ["LAPTOP","HP G9","none","Listed","10/05/2026","1500",null,null,null,"Tlokweng"],
+          ["Laptop","Hp ","Non","Listed",null,"1800"],
+          ["LAPTOP","ACER ASPRA LITE 14","none","Listed","10/05/2026","2600",null,null,null,"Tlokweng"],
+          ["CAMERA LENS","CANON RF 35MM F1.8","none","Listed","10/05/2026","7900",null,null,null,"Tlokweng"],
+          ["SMARTWATCH","IWATCH SERIES 8","iCloud","Listed","10/05/2026","2000",null,null,null,"Tlokweng"],
+          ["SMARTWATCH","IWATCH SERIES 9","None","Listed","10/05/2026","5500",null,null,null,"Tlokweng"],
+          ["SMARTWATCH","IWATCH SERIES 10","none","Listed","10/05/2026","6100",null,null,null,"Tlokweng"],
+          ["TV","MULLER 39INCH","None","Listed","10/05/2026","1500",null,null,null,"Tlokweng"],
+          ["TV","HISENSE 42 INCH","None","Listed","10/05/2026","2200",null,null,null,"Keiths"],
+          ["TV","40 INCH TV","None","Listed","10/05/2026","2200",null,null,null,"Keiths"],
+          ["FRIDGE","2 DOOR DEFY","none","Listed","10/05/2026","4300",null,null,null,"Tlokweng"],
+          ["PHONE","IPHONE 15 PRO MAX","None","Listed","10/05/2026","10000",null,null,null,"Tlokweng"],
+          ["LAPTOP","HP DESK AND SONY MONITOR","None","Listed","10/05/2026","1000",null,null,null,"Tlokweng"],
+          ["Console","PS4 slim, 1 controller ","None","Listed","10/05/2026","2800",null,null,null,"Tlokweng"],
+          ["Kitchen appliance ","Pressure cooker ","None","Listed","11/05/2026","2000",null,null,null,"Tlokweng"],
+          ["Game","Nba2k19","None","Listed","11/05/2026","200",null,null,null,"Tlokweng"],
+          ["Game","GTA 5","None","Listed","11/05/2026","300",null,null,null,"Tlokweng"],
+          ["Kitchen appliance ","Air fryer ","None","Listed","13/05/2026","1500",null,null,null,"Tlokweng"],
+          ["Phone","IPhone 13 Pro Max","None","Listed","20/05/2026","6800",null,null,null,"Tlokweng"],
+          ["Phone","Redmi phone ","None","Listed",null,"900",null,null,null,"Tlokweng"],
+          ["Watch"," HUAWEI watch gt 3","None","Listed","27/05/2026","1200",null,null,null,"Tlokweng"],
+          ["TV","75 inch TV","None",null,null,"6500"],
+          ["Car","TOYOTA COROLLA CAR"],
+          ["TV","Smart Tv 75 inch ",null,null,null,"2200"],
+          ["Console","PS4 pro and 3 games (1pad) "],
+          ["Phone ","Iphone14"],
+          ["Laptop "," Lenovo laptop idea pad"],
+          ["Fridge ","Deep freezer ",null,null,null,"3000"],
+          ["Speaker ","Jbl grip speaker ",null,null,null,"1000"],
+          ["TOTALS",null,null,null,null,"80000"]
+        ],
+        osDebts: [
+          ["Client Name","Loan Amount","Interest Rate","Interest Amount","Total Payback","Date Given","Due Date","Days Overdue","Amount Paid","Remaining Balance","Column 1"],
+          ["Keith","4000",null,null,"4000","30-May-2026","30 Aug 2026","0"],
+          ["Rose","500",null,null,"500","25-Apr-2026","12 May 2026","29","0","500"],
+          ["Killa",null,null,null,"10 vapes + 500",null,null,null,"250","250"],
+          ["Kabo","1900",null,null,"1900","10-May-2026","31 May 2026",null,"1600","300"],
+          ["Eugene","480",null,null,"480","12-May-2026","31 May 2026",null,"450","30"],
+          ["Letso","1500",null,null,"2300","23-May-2026","5 Jun 2026"],
+          ["Letso","500",null,null,"750","26-May-2026","5 Jun 2026"],
+          ["Archie","3000",null,null,"5400","30-May-2026","17 Jun 2026"],
+          ["Archie","160",null,null,"160"],
+          ["Sosa","8000",null,null,"8500"],
+          ["Phenyo ","1350",null,null,"1350"],
+          ["Phenyo","6500",null,null,"6500"],
+          ["TOTALS","27890","0","0","31840",null,null,"29","2300","500"]
+        ],
+        activePawns: [
+          ["Client Name","Client Number","Item Pawned","Loan Amount","Interest Amount","Total Payback","Date Given","Due Date","Days Overdue","Amount Paid","Remaining Balance","Location"],
+          [null,null,"CPU, food equipment ","1400","1400","2800",null,"30 Jun 2026"],
+          [null,null,"Iphone14, Lenovo laptop idea pad","3000","2200","5200",null,"4 Jun 2026"],
+          [null,null,"Packard bell","500","300","800",null,"15 Jun 2026"],
+          [null,null,"Dining table (6 chairs), MacBook Air 2019,TV Hisense 50 inches ","3500","2450","5950",null,"16 Jun 2026"],
+          [null,null,"Acer laptop","1000","600","1600",null,"19 Jun 2026"],
+          [null,null,"Projector","300","200","500",null,"18 Jun 2026"],
+          [null,null,"Satellite phone","1500","500","2000",null,"16 Jun 2026"],
+          [null,null,"Tecno phone ","300","200","500",null,"21 Jun 2026"],
+          [null,null,"2Door fridge ","3000","2000","5000","10-Jun-2026","25 Jun 2026"],
+          ["TOTALS",null,null,"9700",null,"16350"]
+        ],
+        damagedGoods: [
+          ["Item ","Description ","Value ","Damage /stolen"],
+          ["TV","Sky 40 inch","1500","Damage "],
+          ["Laptop ","Lenovo idea pad flex 3","2500","Stolen "],
+          ["Laptop ","Lenovo idea pad 15 inch","3100","Damaged"],
+          ["Laptop ","Lenovo idea pad ","3000","Stolen "]
+        ]
+      };
+    </script>
+    <script src="https://unpkg.com/@babel/standalone@7.26.10/babel.min.js"></script>
+    <script type="text/babel" data-type="module">
+      import React, { useEffect, useMemo, useRef, useState } from "https://esm.sh/react@18.3.1";
+      import { createRoot } from "https://esm.sh/react-dom@18.3.1/client";
+      import {
+        Area,
+        AreaChart,
+        Bar,
+        BarChart,
+        CartesianGrid,
+        Cell,
+        Legend,
+        Line,
+        LineChart,
+        Pie,
+        PieChart,
+        ResponsiveContainer,
+        Tooltip,
+        XAxis,
+        YAxis
+      } from "https://esm.sh/recharts@2.15.3?deps=react@18.3.1,react-dom@18.3.1";
+
+      const today = new Date("2026-06-10T12:00:00+02:00");
+      const money = new Intl.NumberFormat("en-BW", { style: "currency", currency: "BWP", maximumFractionDigits: 0 });
+      const pct = new Intl.NumberFormat("en", { style: "percent", maximumFractionDigits: 1 });
+      const colors = ["#2563eb", "#059669", "#f59e0b", "#dc2626", "#7c3aed", "#0891b2", "#be123c", "#4b5563"];
+
+      function parseNumber(value) {
+        if (value === null || value === undefined) return 0;
+        const match = String(value).replace(/,/g, "").match(/-?\d+(\.\d+)?/);
+        return match ? Number(match[0]) : 0;
+      }
+
+      function parseDate(value) {
+        if (!value) return null;
+        const raw = String(value).trim();
+        const monthNames = { jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2, apr: 3, april: 3, may: 4, jun: 5, june: 5, jul: 6, july: 6, aug: 7, august: 7, sep: 8, sept: 8, september: 8, oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11 };
+        let m = raw.match(/^(\d{1,2})[-/\s]([A-Za-z]{3,9})[-/\s](\d{4})$/);
+        if (m) return new Date(Number(m[3]), monthNames[m[2].toLowerCase()], Number(m[1]));
+        m = raw.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})$/);
+        if (m) return new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1]));
+        const parsed = new Date(raw);
+        return Number.isNaN(parsed.getTime()) ? null : parsed;
+      }
+
+      function daysBetween(a, b) {
+        const ms = new Date(a.getFullYear(), a.getMonth(), a.getDate()) - new Date(b.getFullYear(), b.getMonth(), b.getDate());
+        return Math.round(ms / 86400000);
+      }
+
+      function toObjects(rows) {
+        const [headers, ...body] = rows;
+        return body
+          .map((row, index) => ({ row, rowNumber: index + 2 }))
+          .filter(entry => entry.row && entry.row.some(cell => cell !== null && cell !== undefined && String(cell).trim() !== ""))
+          .filter(entry => String(entry.row[0] || "").trim().toLowerCase() !== "totals")
+          .map(entry => ({
+            ...Object.fromEntries(headers.map((header, index) => [String(header || `Column ${index + 1}`).trim(), entry.row[index] ?? null])),
+            __rowNumber: entry.rowNumber
+          }));
+      }
+
+      function dateKey(date) {
+        return date.toISOString().slice(0, 10);
+      }
+
+      function dateInputValue(date) {
+        if (!date) return "";
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+      }
+
+      function addDays(date, days) {
+        const next = new Date(date);
+        next.setDate(next.getDate() + days);
+        return next;
+      }
+
+      function monthKey(date) {
+        return date ? `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}` : "Unknown";
+      }
+
+      function weekKey(date) {
+        if (!date) return "Unknown";
+        const start = addDays(date, -date.getDay());
+        return `${start.toLocaleDateString("en-GB", { day: "2-digit", month: "short" })}`;
+      }
+
+      function riskBand(score) {
+        if (score >= 70) return { label: "High risk", color: "#dc2626", fill: "rgba(220,38,38,.12)" };
+        if (score >= 40) return { label: "Medium risk", color: "#f59e0b", fill: "rgba(245,158,11,.16)" };
+        return { label: "Low risk", color: "#059669", fill: "rgba(5,150,105,.13)" };
+      }
+
+      function tokensFor(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, " ")
+          .split(/\s+/)
+          .filter(token => token.length > 2 && !["and", "the", "with", "inch", "inches"].includes(token));
+      }
+
+      function findPawnAmountMatch(product, category, candidates) {
+        const productTokens = tokensFor(`${product} ${category}`);
+        if (!productTokens.length) return null;
+        let best = null;
+        for (const candidate of candidates) {
+          const candidateTokens = tokensFor(candidate.item);
+          const shared = productTokens.filter(token => candidateTokens.includes(token));
+          const score = shared.length / productTokens.length;
+          if (score > 0 && (!best || score > best.score)) best = { ...candidate, score };
+        }
+        return best && best.score >= 0.45 ? best : null;
+      }
+
+      function buildModel(source) {
+        const pawnAmountCandidates = toObjects(source.activePawns).map((row, index) => {
+          const item = String(row["Item Pawned"] || "").trim();
+          const parts = item.split(",").map(part => part.trim()).filter(Boolean);
+          const loan = parseNumber(row["Loan Amount"]);
+          const expectedRepayment = parseNumber(row["Total Payback"]) || loan + parseNumber(row["Interest Amount"]);
+          return {
+            id: `PAWN-${index + 1}`,
+            item,
+            loan,
+            expectedRepayment,
+            dateGiven: parseDate(row["Date Given"]),
+            dueDate: parseDate(row["Due Date"]),
+            amountPerItem: parts.length ? loan / parts.length : loan,
+            expectedPerItem: parts.length ? expectedRepayment / parts.length : expectedRepayment,
+            source: "Active Pawns"
+          };
+        }).filter(candidate => candidate.item && candidate.loan);
+
+        const inventory = toObjects(source.companyOwnedItems).map((row, index) => {
+          const listDate = parseDate(row["List Date"]);
+          const value = parseNumber(row["List amount"]);
+          const paid = parseNumber(row["Amount paid"]);
+          const sold = parseNumber(row["Sell amount"]);
+          const listedStatus = String(row["Listed on Market place"] || "").trim();
+          const isSold = sold > 0 || /sold/i.test(listedStatus);
+          const product = String(row.Product || "Unknown item").trim();
+          const category = String(row.Category || "Uncategorized").trim().toUpperCase();
+          const pawnMatch = paid ? null : findPawnAmountMatch(product, category, pawnAmountCandidates);
+          const pawnAmount = paid || pawnMatch?.amountPerItem || 0;
+          const pawnAmountSource = paid ? "Amount paid column" : pawnMatch ? `${pawnMatch.source}: ${pawnMatch.item}` : "Missing";
+          const dateGiven = pawnMatch?.dateGiven || null;
+          const expectedRepayment = pawnMatch?.expectedPerItem || 0;
+          const costBasis = pawnAmount;
+          const profit = parseNumber(row["Profit/loss"]) || (sold && costBasis ? sold - costBasis : 0);
+          return {
+            id: `I-${index + 1}`,
+            sheetName: "Company Owned Items",
+            rowNumber: row.__rowNumber,
+            category,
+            product,
+            damage: String(row.Damages || "None").trim(),
+            listed: listedStatus,
+            listDate,
+            value,
+            paid,
+            pawnAmount,
+            pawnAmountSource,
+            dateGiven,
+            expectedRepayment,
+            costBasis,
+            sold,
+            profit,
+            isSold,
+            location: String(row.Location || "").trim(),
+            daysHeld: dateGiven ? Math.max(0, daysBetween(today, dateGiven)) : null,
+            age: listDate ? Math.max(0, daysBetween(today, listDate)) : null
+          };
+        });
+
+        const damaged = toObjects(source.damagedGoods).map((row, index) => ({
+          id: `D-${index + 1}`,
+          item: String(row["Item"] || row["Item "] || "Unknown").trim(),
+          description: String(row["Description"] || row["Description "] || "").trim(),
+          value: parseNumber(row.Value || row["Value "]),
+          status: String(row["Damage /stolen"] || "").trim()
+        }));
+
+        const active = toObjects(source.activePawns).map((row, index) => {
+          const loan = parseNumber(row["Loan Amount"]);
+          const interest = parseNumber(row["Interest Amount"]);
+          const total = parseNumber(row["Total Payback"]) || loan + interest;
+          const paid = parseNumber(row["Amount Paid"]);
+          const dueDate = parseDate(row["Due Date"]);
+          const remaining = parseNumber(row["Remaining Balance"]) || Math.max(total - paid, 0);
+          const overdueDays = Math.max(parseNumber(row["Days Overdue"]), dueDate ? daysBetween(today, dueDate) : 0);
+          return {
+            id: `P-${index + 1}`,
+            sheetName: "Active Pawns",
+            rowNumber: row.__rowNumber,
+            client: String(row["Client Name"] || `Pawn ${index + 1}`).trim(),
+            item: String(row["Item Pawned"] || "Pawned item").trim(),
+            loan,
+            interest,
+            total,
+            paid,
+            remaining,
+            dateGiven: parseDate(row["Date Given"]),
+            dueDate,
+            overdueDays,
+            location: String(row.Location || "").trim(),
+            type: "Active pawn"
+          };
+        });
+
+        const os = toObjects(source.osDebts).map((row, index) => {
+          const loan = parseNumber(row["Loan Amount"]);
+          const total = parseNumber(row["Total Payback"]) || loan;
+          const paid = parseNumber(row["Amount Paid"]);
+          const dueDate = parseDate(row["Due Date"]);
+          const remaining = parseNumber(row["Remaining Balance"]) || Math.max(total - paid, 0);
+          const overdueDays = Math.max(parseNumber(row["Days Overdue"]), dueDate ? daysBetween(today, dueDate) : 0);
+          return {
+            id: `O-${index + 1}`,
+            sheetName: "OS Debts",
+            rowNumber: row.__rowNumber,
+            client: String(row["Client Name"] || `Debt ${index + 1}`).trim(),
+            item: String(row["Column 1"] || "Outstanding debt").trim(),
+            loan,
+            interest: parseNumber(row["Interest Amount"]) || Math.max(total - loan, 0),
+            total,
+            paid,
+            remaining,
+            dateGiven: parseDate(row["Date Given"]),
+            dueDate,
+            overdueDays,
+            location: "",
+            type: "Outstanding debt"
+          };
+        });
+
+        const loans = [...active, ...os].filter(loan => loan.loan || loan.total || loan.remaining);
+        loans.forEach(loan => {
+          const partialPayment = loan.paid > 0 && loan.remaining > 0;
+          const missed = loan.overdueDays > 0 && loan.remaining > 0;
+          const score = Math.min(100,
+            (loan.overdueDays > 0 ? Math.min(45, loan.overdueDays * 1.5) : 0) +
+            (partialPayment ? 12 : 0) +
+            (missed ? 25 : 0) +
+            (loan.loan >= 5000 ? 20 : loan.loan >= 2500 ? 12 : loan.loan >= 1000 ? 6 : 2)
+          );
+          loan.riskScore = Math.round(score);
+          loan.risk = riskBand(score);
+        });
+
+        const principalOutstanding = loans.reduce((sum, loan) => sum + loan.loan, 0);
+        const expectedRepayment = loans.reduce((sum, loan) => sum + loan.total, 0);
+        const collected = loans.reduce((sum, loan) => sum + loan.paid, 0);
+        const remaining = loans.reduce((sum, loan) => sum + loan.remaining, 0);
+        const expectedInterest = loans.reduce((sum, loan) => sum + loan.interest, 0);
+        const availableInventory = inventory.filter(item => !item.isSold);
+        const soldInventory = inventory.filter(item => item.isSold);
+        const inventoryValue = availableInventory.reduce((sum, item) => sum + item.value, 0);
+        const salesEarned = soldInventory.reduce((sum, item) => sum + item.sold, 0);
+        const salesProfit = soldInventory.reduce((sum, item) => sum + item.profit, 0);
+        const lossValue = damaged.reduce((sum, item) => sum + item.value, 0);
+        const overdue = loans.filter(loan => loan.overdueDays > 0 && loan.remaining > 0);
+        const dueToday = loans.filter(loan => loan.dueDate && daysBetween(loan.dueDate, today) === 0).reduce((sum, loan) => sum + loan.remaining, 0);
+        const due7 = loans.filter(loan => loan.dueDate && daysBetween(loan.dueDate, today) >= 0 && daysBetween(loan.dueDate, today) <= 7).reduce((sum, loan) => sum + loan.remaining, 0);
+        const dueNextWeek = loans.filter(loan => loan.dueDate && daysBetween(loan.dueDate, today) >= 8 && daysBetween(loan.dueDate, today) <= 14).reduce((sum, loan) => sum + loan.remaining, 0);
+        const due30 = loans.filter(loan => loan.dueDate && daysBetween(loan.dueDate, today) >= 0 && daysBetween(loan.dueDate, today) <= 30).reduce((sum, loan) => sum + loan.remaining, 0);
+        const due90 = loans.filter(loan => loan.dueDate && daysBetween(loan.dueDate, today) >= 0 && daysBetween(loan.dueDate, today) <= 90).reduce((sum, loan) => sum + loan.remaining, 0);
+        const overdueAmount = overdue.reduce((sum, loan) => sum + loan.remaining, 0);
+        const collectionRate = expectedRepayment ? collected / expectedRepayment : 0;
+        const recoveryRate = principalOutstanding ? (collected + Math.max(inventoryValue - lossValue, 0)) / (principalOutstanding + inventoryValue) : 0;
+        const expectedNetProfit = expectedInterest + salesEarned + inventoryValue - lossValue;
+
+        const dailyForecast = Array.from({ length: 91 }, (_, i) => {
+          const day = addDays(today, i);
+          const due = loans
+            .filter(loan => loan.dueDate && dateKey(loan.dueDate) === dateKey(day))
+            .reduce((sum, loan) => sum + loan.remaining, 0);
+          const recoveryFactor = i <= 7 ? 0.82 : i <= 30 ? 0.68 : 0.5;
+          return {
+            date: day.toLocaleDateString("en-GB", { day: "2-digit", month: "short" }),
+            fullDate: dateKey(day),
+            due,
+            likely: Math.round(due * recoveryFactor),
+            best: due,
+            worst: Math.round(due * 0.35)
+          };
+        });
+
+        const byCategory = Object.values(availableInventory.reduce((map, item) => {
+          map[item.category] ||= { name: item.category, value: 0, count: 0 };
+          map[item.category].value += item.value;
+          map[item.category].count += 1;
+          return map;
+        }, {})).sort((a, b) => b.value - a.value);
+
+        const monthly = {};
+        [...loans.map(loan => ({ date: loan.dateGiven || loan.dueDate, loan: loan.loan, repayment: loan.total, interest: loan.interest })), ...availableInventory.map(item => ({ date: item.listDate, inventory: item.value })), ...soldInventory.map(item => ({ date: item.listDate, recovered: item.sold, profit: item.profit }))].forEach(row => {
+          const key = monthKey(row.date);
+          monthly[key] ||= { month: key, loans: 0, repayment: 0, interest: 0, inventory: 0, profit: 0, recovered: 0 };
+          monthly[key].loans += row.loan || 0;
+          monthly[key].repayment += row.repayment || 0;
+          monthly[key].interest += row.interest || 0;
+          monthly[key].inventory += row.inventory || 0;
+          monthly[key].recovered += row.recovered || 0;
+          monthly[key].profit += (row.interest || 0) + (row.profit || 0) + (row.inventory ? row.inventory * 0.18 : 0);
+        });
+        loans.forEach(loan => {
+          const key = monthKey(loan.dueDate || loan.dateGiven);
+          monthly[key] ||= { month: key, loans: 0, repayment: 0, interest: 0, inventory: 0, profit: 0, recovered: 0 };
+          monthly[key].recovered += loan.paid;
+        });
+        const monthlyGrowth = Object.values(monthly).sort((a, b) => a.month.localeCompare(b.month));
+        monthlyGrowth.forEach((row, index) => {
+          const previous = monthlyGrowth[index - 1];
+          row.growthPct = previous && previous.loans ? ((row.loans - previous.loans) / previous.loans) * 100 : 0;
+        });
+
+        const weekly = Object.values(loans.reduce((map, loan) => {
+          const key = weekKey(loan.dateGiven || loan.dueDate);
+          map[key] ||= { week: key, loans: 0, repayment: 0, recovered: 0 };
+          map[key].loans += loan.loan;
+          map[key].repayment += loan.total;
+          map[key].recovered += loan.paid;
+          return map;
+        }, {}));
+
+        const inventoryAging = [
+          { bucket: "0-14 days", count: availableInventory.filter(item => item.age !== null && item.age <= 14).length, value: availableInventory.filter(item => item.age !== null && item.age <= 14).reduce((s, i) => s + i.value, 0) },
+          { bucket: "15-30 days", count: availableInventory.filter(item => item.age > 14 && item.age <= 30).length, value: availableInventory.filter(item => item.age > 14 && item.age <= 30).reduce((s, i) => s + i.value, 0) },
+          { bucket: "31+ days", count: availableInventory.filter(item => item.age > 30 || item.age === null).length, value: availableInventory.filter(item => item.age > 30 || item.age === null).reduce((s, i) => s + i.value, 0) }
+        ];
+
+        return {
+          source,
+          inventory,
+          availableInventory,
+          soldInventory,
+          damaged,
+          loans,
+          active,
+          os,
+          overdue,
+          dueToday,
+          due7,
+          dueNextWeek,
+          due30,
+          due90,
+          overdueAmount,
+          collectionRate,
+          recoveryRate,
+          principalOutstanding,
+          expectedRepayment,
+          expectedInterest,
+          inventoryValue,
+          salesEarned,
+          salesProfit,
+          lossValue,
+          expectedNetProfit,
+          remaining,
+          collected,
+          dailyForecast,
+          byCategory,
+          monthlyGrowth,
+          weekly,
+          inventoryAging,
+          slowMoving: availableInventory.filter(item => item.age === null || item.age >= 21).sort((a, b) => (b.age || 999) - (a.age || 999)),
+          highValueItems: [...availableInventory].sort((a, b) => b.value - a.value).slice(0, 8),
+          discountItems: availableInventory.filter(item => item.age === null || item.age >= 21 || /icloud|damage/i.test(item.damage)).sort((a, b) => b.value - a.value)
+        };
+      }
+
+      function Stat({ label, value, tone = "blue", sub }) {
+        return (
+          <div className={`stat stat-${tone}`}>
+            <span>{label}</span>
+            <strong>{value}</strong>
+            {sub && <small>{sub}</small>}
+          </div>
+        );
+      }
+
+      function Panel({ title, action, children }) {
+        return (
+          <section className="panel">
+            <div className="panel-head">
+              <h2>{title}</h2>
+              {action}
+            </div>
+            {children}
+          </section>
+        );
+      }
+
+      function ChartBox({ title, children }) {
+        return (
+          <div className="chart-box">
+            <h3>{title}</h3>
+            <div className="chart-area">{children}</div>
+          </div>
+        );
+      }
+
+      function useVoice(actions, onUnknown) {
+        const [listening, setListening] = useState(false);
+        const [lastCommand, setLastCommand] = useState("Ready");
+        const recognitionRef = useRef(null);
+
+        useEffect(() => {
+          const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+          if (!SpeechRecognition) {
+            setLastCommand("Voice not supported in this browser");
+            return;
+          }
+          const recognition = new SpeechRecognition();
+          recognition.continuous = true;
+          recognition.interimResults = false;
+          recognition.lang = "en-US";
+          recognition.onresult = event => {
+            const phrase = event.results[event.results.length - 1][0].transcript.toLowerCase().trim();
+            setLastCommand(phrase);
+            const hit = Object.keys(actions).find(command => phrase.includes(command));
+            if (hit) actions[hit]();
+            else if (phrase.length > 6 && onUnknown) onUnknown(phrase);
+          };
+          recognition.onend = () => {
+            if (recognitionRef.current) {
+              try {
+                recognition.start();
+                setListening(true);
+              } catch {
+                setListening(false);
+              }
+            }
+          };
+          recognition.onerror = () => setListening(false);
+          recognitionRef.current = recognition;
+          try {
+            recognition.start();
+            setListening(true);
+          } catch {
+            setListening(false);
+          }
+          return () => {
+            recognitionRef.current = null;
+            recognition.stop();
+          };
+        }, [actions]);
+
+        return { listening, lastCommand };
+      }
+
+      function App() {
+        const [sheetData, setSheetData] = useState(window.PAWNTRACK_DATA);
+        const [liveStatus, setLiveStatus] = useState("Snapshot loaded from NEW ONE");
+        const [lastSync, setLastSync] = useState(window.PAWNTRACK_DATA.syncedAt);
+        const model = useMemo(() => buildModel(sheetData), [sheetData]);
+        const [view, setView] = useState("Growth");
+        const [analysis, setAnalysis] = useState("Choose an AI action to generate business guidance from the synced NEW ONE sheet data.");
+        const [aiStatus, setAiStatus] = useState("Local model ready");
+        const [selectedLoanId, setSelectedLoanId] = useState("");
+        const [paymentAmount, setPaymentAmount] = useState("");
+        const [loanDueDate, setLoanDueDate] = useState("");
+        const [selectedInventoryId, setSelectedInventoryId] = useState("");
+        const [sellPrice, setSellPrice] = useState("");
+        const [pawnedAmount, setPawnedAmount] = useState("");
+        const [writeStatus, setWriteStatus] = useState("Live writes need the backend connected to Google Sheets credentials.");
+        const [assistantInput, setAssistantInput] = useState("");
+        const [assistantAction, setAssistantAction] = useState(null);
+
+        async function refreshSheetData() {
+          try {
+            const response = await fetch("/api/sheet-data");
+            if (!response.ok) throw new Error("Live backend unavailable");
+            const result = await response.json();
+            if (result.data) {
+              window.PAWNTRACK_DATA = result.data;
+              setSheetData(result.data);
+              setLastSync(result.syncedAt || new Date().toLocaleString());
+              setLiveStatus("Live Google Sheets sync active");
+            }
+          } catch {
+            setLiveStatus("Using local snapshot until Google Sheets credentials are connected");
+          }
+        }
+
+        useEffect(() => {
+          refreshSheetData();
+          const timer = setInterval(refreshSheetData, 10000);
+          return () => clearInterval(timer);
+        }, []);
+
+        useEffect(() => {
+          const firstOpenLoan = model.loans.find(loan => loan.remaining > 0);
+          if (!selectedLoanId && firstOpenLoan) {
+            setSelectedLoanId(firstOpenLoan.id);
+            setLoanDueDate(dateInputValue(firstOpenLoan.dueDate));
+          }
+          const firstInventoryItem = model.availableInventory.find(item => item.value > 0);
+          if (!selectedInventoryId && firstInventoryItem) setSelectedInventoryId(firstInventoryItem.id);
+        }, [model, selectedLoanId, selectedInventoryId]);
+
+        useEffect(() => {
+          const item = model.availableInventory.find(record => record.id === selectedInventoryId);
+          if (item && !pawnedAmount) setPawnedAmount(item.pawnAmount ? String(Math.round(item.pawnAmount)) : "");
+        }, [selectedInventoryId, model, pawnedAmount]);
+
+        const localAi = {
+          "Analyze Business": `Business health: ${money.format(model.expectedRepayment)} expected repayment against ${money.format(model.principalOutstanding)} principal. Collection rate is ${pct.format(model.collectionRate)} and overdue exposure is ${money.format(model.overdueAmount)}. Focus first on high-risk borrowers and fast liquidation of aged stock.`,
+          "Forecast Next Month": `Next 30 days: likely cash inflow is ${money.format(model.due30 * 0.68)} from ${money.format(model.due30)} scheduled collections. Best case is full collection; worst case is about ${money.format(model.due30 * 0.35)} if overdue behavior continues.`,
+          "Predict Cash Position": `Cash position: next 7 days likely brings ${money.format(model.due7 * 0.82)}. Next 90 days likely brings ${money.format(model.due90 * 0.5)} before additional inventory sales. Current available inventory is ${money.format(model.inventoryValue)} and logged sales earned are ${money.format(model.salesEarned)}, less ${money.format(model.lossValue)} damaged or stolen exposure.`,
+          "Identify Risky Clients": `Risky clients: ${model.loans.filter(l => l.riskScore >= 70).map(l => `${l.client} (${money.format(l.remaining)}, ${l.overdueDays} days overdue)`).join(", ") || "No high-risk clients in the current scoring model."}`,
+          "Recommend Collection Priorities": `Collection priorities: ${model.loans.filter(l => l.remaining > 0).sort((a, b) => b.riskScore - a.riskScore || b.remaining - a.remaining).slice(0, 6).map(l => `${l.client}: ${money.format(l.remaining)} due ${l.dueDate ? l.dueDate.toLocaleDateString("en-GB") : "date missing"}`).join("; ")}.`,
+          "Recommend Inventory Discounts": `Discount candidates: ${model.discountItems.slice(0, 6).map(item => `${item.product} (${money.format(item.value)}, ${item.age === null ? "no list date" : `${item.age} days listed`})`).join("; ")}. Start with 10-15% reductions on aged or issue-flagged items.`
+        };
+
+        async function runAi(action) {
+          setAnalysis(localAi[action]);
+          setAiStatus("Checking ChatGPT and Claude bridge");
+          try {
+            const response = await fetch("/api/analyze", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                action,
+                localAnalysis: localAi[action],
+                metrics: {
+                  principalOutstanding: model.principalOutstanding,
+                  expectedRepayment: model.expectedRepayment,
+                  expectedInterest: model.expectedInterest,
+                  inventoryValue: model.inventoryValue,
+                  salesEarned: model.salesEarned,
+                  salesProfit: model.salesProfit,
+                  damagedStolenLosses: model.lossValue,
+                  overdueAmount: model.overdueAmount,
+                  due7: model.due7,
+                  due30: model.due30,
+                  due90: model.due90,
+                  collectionRate: model.collectionRate,
+                  recoveryRate: model.recoveryRate
+                },
+                riskyClients: model.loans.filter(l => l.remaining > 0).sort((a, b) => b.riskScore - a.riskScore).slice(0, 8).map(l => ({
+                  client: l.client,
+                  remaining: l.remaining,
+                  dueDate: l.dueDate ? dateKey(l.dueDate) : null,
+                  overdueDays: l.overdueDays,
+                  riskScore: l.riskScore
+                })),
+                inventory: model.availableInventory.slice(0, 40).map(item => ({
+                  category: item.category,
+                  product: item.product,
+                  value: item.value,
+                  pawnAmount: item.pawnAmount,
+                  age: item.age,
+                  damage: item.damage
+                }))
+              })
+            });
+            if (!response.ok) throw new Error("Bridge not available");
+            const result = await response.json();
+            if (result.analysis) {
+              setAnalysis(result.analysis);
+              setAiStatus(result.provider || "AI bridge connected");
+            }
+          } catch {
+            setAiStatus("Local model used; start the bridge server for ChatGPT + Claude");
+          }
+        }
+
+        const aiActions = Object.fromEntries(Object.keys(localAi).map(action => [action, () => runAi(action)]));
+
+        async function writeSheetUpdates(updates, successMessage) {
+          setWriteStatus("Writing to Google Sheets...");
+          const response = await fetch("/api/sheet-batch-update", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ updates })
+          });
+          if (!response.ok) throw new Error("Google Sheets write failed");
+          setWriteStatus(successMessage);
+          await refreshSheetData();
+        }
+
+        function selectLoan(loanId) {
+          const loan = model.loans.find(item => item.id === loanId);
+          setSelectedLoanId(loanId);
+          setLoanDueDate(dateInputValue(loan?.dueDate));
+          setPaymentAmount("");
+          if (loan) setView("Live");
+        }
+
+        function applyLocalLoanUpdate(loan, amount, dueDateValue) {
+          setSheetData(previous => {
+            const key = loan.sheetName === "OS Debts" ? "osDebts" : "activePawns";
+            const rows = previous[key].map(row => [...row]);
+            const rowIndex = loan.rowNumber - 1;
+            rows[rowIndex] ||= [];
+            if (amount > 0) {
+              const paidIndex = loan.sheetName === "OS Debts" ? 8 : 9;
+              const remainingIndex = loan.sheetName === "OS Debts" ? 9 : 10;
+              const newPaid = loan.paid + amount;
+              rows[rowIndex][paidIndex] = newPaid;
+              rows[rowIndex][remainingIndex] = Math.max(loan.total - newPaid, 0);
+            }
+            if (dueDateValue) {
+              const dueDateIndex = loan.sheetName === "OS Debts" ? 6 : 7;
+              rows[rowIndex][dueDateIndex] = dueDateValue;
+            }
+            return { ...previous, [key]: rows, syncedAt: new Date().toISOString() };
+          });
+        }
+
+        async function applyPayment(loanId = selectedLoanId, amount = parseNumber(paymentAmount), dueDateValue = loanDueDate) {
+          const loan = model.loans.find(item => item.id === loanId);
+          if (!loan) {
+            setWriteStatus("Choose a loan first.");
+            return;
+          }
+          if ((!amount || amount <= 0) && !dueDateValue) {
+            setWriteStatus("Enter a repayment amount, a new due date, or both.");
+            return;
+          }
+          const paidColumn = loan.sheetName === "OS Debts" ? "I" : "J";
+          const remainingColumn = loan.sheetName === "OS Debts" ? "J" : "K";
+          const dueDateColumn = loan.sheetName === "OS Debts" ? "G" : "H";
+          const updates = [];
+          if (amount > 0) {
+            const newPaid = loan.paid + amount;
+            const newRemaining = Math.max(loan.total - newPaid, 0);
+            updates.push({ range: `'${loan.sheetName}'!${paidColumn}${loan.rowNumber}`, values: [[newPaid]] });
+            updates.push({ range: `'${loan.sheetName}'!${remainingColumn}${loan.rowNumber}`, values: [[newRemaining]] });
+          }
+          if (dueDateValue) {
+            updates.push({ range: `'${loan.sheetName}'!${dueDateColumn}${loan.rowNumber}`, values: [[dueDateValue]] });
+          }
+          try {
+            const parts = [];
+            if (amount > 0) parts.push(`${money.format(amount)} repayment`);
+            if (dueDateValue) parts.push(`due date ${dueDateValue}`);
+            await writeSheetUpdates(updates, `Updated ${loan.client}: ${parts.join(", ")}.`);
+          } catch {
+            applyLocalLoanUpdate(loan, amount, dueDateValue);
+            setWriteStatus(`Preview loan update recorded locally for ${loan.client}. Connect Google Sheets credentials to write this to NEW ONE.`);
+          }
+          setPaymentAmount("");
+          setLoanDueDate("");
+          setAssistantAction(null);
+        }
+
+        function applyLocalInventorySale(item, price, profit) {
+          setSheetData(previous => {
+            const rows = previous.companyOwnedItems.map(row => [...row]);
+            const rowIndex = item.rowNumber - 1;
+            rows[0] ||= [];
+            rows[0][10] = "Sale Date";
+            rows[0][11] = "Date Given";
+            rows[0][12] = "Expected Repayment";
+            rows[0][13] = "Days Held";
+            rows[rowIndex] ||= [];
+            rows[rowIndex][3] = "Sold";
+            rows[rowIndex][6] = item.costBasis;
+            rows[rowIndex][7] = price;
+            rows[rowIndex][8] = profit;
+            rows[rowIndex][10] = dateInputValue(today);
+            rows[rowIndex][11] = item.dateGiven ? dateInputValue(item.dateGiven) : "";
+            rows[rowIndex][12] = item.expectedRepayment || "";
+            rows[rowIndex][13] = item.dateGiven ? daysBetween(today, item.dateGiven) : "";
+            return { ...previous, companyOwnedItems: rows, syncedAt: new Date().toISOString() };
+          });
+        }
+
+        function selectInventoryItem(itemId, useListPrice = false) {
+          const item = model.availableInventory.find(record => record.id === itemId);
+          setSelectedInventoryId(itemId);
+          if (item) {
+            setPawnedAmount(item.pawnAmount ? String(Math.round(item.pawnAmount)) : "");
+            if (useListPrice) setSellPrice(String(item.value));
+          }
+        }
+
+        async function applyInventorySale(itemId = selectedInventoryId, price = parseNumber(sellPrice), pawned = parseNumber(pawnedAmount)) {
+          const item = model.availableInventory.find(record => record.id === itemId);
+          if (!item) {
+            setWriteStatus("Choose an inventory item that is still available.");
+            return;
+          }
+          if (!price || price <= 0) {
+            setWriteStatus(`Enter the sell price for ${item.product} before marking it sold.`);
+            return;
+          }
+          if (!pawned || pawned <= 0) {
+            setWriteStatus(`Enter the amount ${item.product} was pawned for before marking it sold.`);
+            return;
+          }
+          const saleDate = dateInputValue(today);
+          const dateGivenValue = item.dateGiven ? dateInputValue(item.dateGiven) : "";
+          const daysHeld = item.dateGiven ? daysBetween(today, item.dateGiven) : "";
+          const saleItem = { ...item, costBasis: pawned, pawnAmount: pawned };
+          const profit = price - pawned;
+          const updates = [
+            { range: `'${item.sheetName}'!K1:N1`, values: [["Sale Date", "Date Given", "Expected Repayment", "Days Held"]] },
+            { range: `'${item.sheetName}'!D${item.rowNumber}`, values: [["Sold"]] },
+            { range: `'${item.sheetName}'!G${item.rowNumber}`, values: [[pawned]] },
+            { range: `'${item.sheetName}'!H${item.rowNumber}`, values: [[price]] },
+            { range: `'${item.sheetName}'!I${item.rowNumber}`, values: [[profit]] },
+            { range: `'${item.sheetName}'!K${item.rowNumber}:N${item.rowNumber}`, values: [[saleDate, dateGivenValue, item.expectedRepayment || "", daysHeld]] }
+          ];
+          try {
+            setWriteStatus("Recording sale...");
+            const response = await fetch("/api/inventory-sale", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                item: {
+                  id: item.id,
+                  product: item.product,
+                  category: item.category,
+                  listedAmount: item.value,
+                  pawnedAmount: pawned,
+                  dateGiven: dateGivenValue,
+                  expectedRepayment: item.expectedRepayment || 0,
+                  daysHeld,
+                  saleDate,
+                  sellAmount: price,
+                  profit,
+                  sheetName: item.sheetName,
+                  rowNumber: item.rowNumber,
+                  pawnAmountSource: item.pawnAmountSource
+                },
+                updates
+              })
+            });
+            if (!response.ok) throw new Error("Inventory sale backend unavailable");
+            const result = await response.json();
+            if (!result.ok) throw new Error("Inventory sale was not confirmed");
+            setWriteStatus(`Sold ${item.product} for ${money.format(price)}. Sale logged and sheet/database updated.`);
+            await refreshSheetData();
+          } catch {
+            applyLocalInventorySale(saleItem, price, profit);
+            setWriteStatus(`Preview sale recorded locally for ${item.product}. Connect Google Sheets credentials to write this to NEW ONE.`);
+          }
+          setSellPrice("");
+          setPawnedAmount("");
+          setAssistantAction(null);
+        }
+
+        function localAssistantAction(command) {
+          const rawText = String(command || "");
+          const text = String(command || "").toLowerCase();
+          const pricedMatch = text.match(/\b(?:for|at|price)\s*(?:p|bwp)?\s*(\d+(?:\.\d+)?)/);
+          const saleAmount = pricedMatch ? Number(pricedMatch[1]) : parseNumber(text);
+          const amount = parseNumber(text);
+          const extensionMatch = rawText.match(/extend(?:ed)?\s+(?:to|until)\s+(.+)$/i);
+          const extensionDate = extensionMatch ? parseDate(extensionMatch[1].trim()) : null;
+          const extensionValue = extensionDate ? dateInputValue(extensionDate) : "";
+          const loan = model.loans
+            .filter(item => item.remaining > 0)
+            .find(item => text.includes(item.client.toLowerCase().trim()));
+          const inventoryItem = model.availableInventory
+            .filter(item => item.value > 0)
+            .find(item => text.includes(item.product.toLowerCase().trim()) || text.includes(item.category.toLowerCase().trim()));
+          if ((text.includes("sold") || text.includes("sell") || text.includes("mark")) && inventoryItem && saleAmount > 0) {
+            return {
+              type: "mark_inventory_sold",
+              itemId: inventoryItem.id,
+              amount: saleAmount,
+              pawnedAmount: inventoryItem.pawnAmount,
+              message: `Ready to mark ${inventoryItem.product} sold for ${money.format(saleAmount)}. Pawned amount: ${inventoryItem.pawnAmount ? money.format(inventoryItem.pawnAmount) : "missing"}.`
+            };
+          }
+          if ((text.includes("paid") || text.includes("payment") || text.includes("record")) && loan && amount > 0) {
+            return {
+              type: "add_payment",
+              loanId: loan.id,
+              amount,
+              dueDate: extensionValue,
+              message: `Ready to record ${money.format(amount)} payment for ${loan.client}${extensionValue ? ` and extend due date to ${extensionValue}` : ""}.`
+            };
+          }
+          if ((text.includes("extend") || text.includes("due date")) && loan && extensionValue) {
+            return {
+              type: "add_payment",
+              loanId: loan.id,
+              amount: 0,
+              dueDate: extensionValue,
+              message: `Ready to extend ${loan.client} to ${extensionValue}.`
+            };
+          }
+          if (text.includes("overdue")) return { type: "show_dashboard", view: "Collections", message: "Opening overdue loans and collections." };
+          if (text.includes("profit")) return { type: "show_dashboard", view: "Profit", message: "Opening profit forecast." };
+          if (text.includes("inventory")) return { type: "show_dashboard", view: "Inventory", message: "Opening inventory value." };
+          return {
+            type: "needs_review",
+            message: "I can read that instruction, but I need a clearer action. Example: “Rose paid 200” or “show overdue loans”."
+          };
+        }
+
+        async function runAssistantCommand(command = assistantInput) {
+          const cleanCommand = String(command || "").trim();
+          if (!cleanCommand) {
+            setWriteStatus("Tell the assistant what to do first.");
+            return;
+          }
+          setView("Live");
+          setAssistantInput(cleanCommand);
+          setWriteStatus("Assistant is reading the instruction...");
+          try {
+            const response = await fetch("/api/assistant-action", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                command: cleanCommand,
+                loans: model.loans.filter(loan => loan.remaining > 0).map(loan => ({
+                  id: loan.id,
+                  client: loan.client,
+                  remaining: loan.remaining,
+                  paid: loan.paid,
+                  total: loan.total,
+                  dueDate: loan.dueDate ? dateKey(loan.dueDate) : null,
+                  overdueDays: loan.overdueDays,
+                  riskScore: loan.riskScore
+                })),
+                inventory: model.inventory.map(item => ({
+                  id: item.id,
+                  product: item.product,
+                  category: item.category,
+                  value: item.value,
+                  pawnAmount: item.pawnAmount,
+                  age: item.age
+                }))
+              })
+            });
+            const result = response.ok ? await response.json() : { action: localAssistantAction(cleanCommand) };
+            const action = result.action || localAssistantAction(cleanCommand);
+            if (action.type === "show_dashboard" && action.view) {
+              setView(action.view);
+              setWriteStatus(action.message);
+              return;
+            }
+            setAssistantAction(action);
+            setWriteStatus(action.message || "Assistant action prepared.");
+          } catch {
+            const action = localAssistantAction(cleanCommand);
+            setAssistantAction(action);
+            setWriteStatus(action.message);
+          }
+        }
+
+        async function confirmAssistantAction() {
+          if (!assistantAction) return;
+          if (assistantAction.type === "add_payment") {
+            await applyPayment(assistantAction.loanId, assistantAction.amount, assistantAction.dueDate || "");
+            return;
+          }
+          if (assistantAction.type === "mark_inventory_sold") {
+            await applyInventorySale(assistantAction.itemId, assistantAction.amount, assistantAction.pawnedAmount);
+            return;
+          }
+          setWriteStatus(assistantAction.message || "No sheet write needed.");
+        }
+
+        const voiceActions = useMemo(() => ({
+          "how much cash is due this week": () => { setView("Collections"); setAnalysis(`Cash due this week is ${money.format(model.due7)}; likely collection is ${money.format(model.due7 * 0.82)}.`); },
+          "who owes me money": () => { setView("Loans"); setAnalysis(model.loans.filter(l => l.remaining > 0).map(l => `${l.client}: ${money.format(l.remaining)}`).join("; ")); },
+          "show overdue loans": () => setView("Collections"),
+          "show profit forecast": () => setView("Profit"),
+          "show growth": () => setView("Growth"),
+          "show inventory value": () => setView("Inventory"),
+          "what is my expected cash next week": () => { setView("Cash"); setAnalysis(`Expected cash next week is ${money.format(model.dueNextWeek)} scheduled, likely ${money.format(model.dueNextWeek * 0.68)}.`); },
+          "analyze business": () => runAi("Analyze Business")
+        }), [model]);
+
+        const { listening, lastCommand } = useVoice(voiceActions, phrase => runAssistantCommand(phrase));
+
+        return (
+          <main>
+            <header className="topbar">
+              <div>
+                <p>PawnTrack Forecasting</p>
+                <h1>Financial command center</h1>
+              </div>
+              <div className="sync-pill">
+                <span className={listening ? "pulse on" : "pulse"} />
+                Voice {listening ? "active" : "waiting"} · {liveStatus}
+              </div>
+            </header>
+
+            <nav className="tabs">
+              {["Growth", "Collections", "Cash", "Profit", "Inventory", "Active Pawns", "Loans", "Live", "AI"].map(tab => (
+                <button key={tab} className={view === tab ? "active" : ""} onClick={() => setView(tab)}>{tab}</button>
+              ))}
+            </nav>
+
+            <section className="summary-grid">
+              <Stat label="Outstanding principal" value={money.format(model.principalOutstanding)} />
+              <Stat label="Expected repayment" value={money.format(model.expectedRepayment)} tone="green" />
+              <Stat label="Inventory value" value={money.format(model.inventoryValue)} tone="amber" sub={`Sales earned ${money.format(model.salesEarned)}`} />
+              <Stat label="Expected net profit" value={money.format(model.expectedNetProfit)} tone="red" sub={`Loss exposure ${money.format(model.lossValue)}`} />
+            </section>
+
+            {view === "Growth" && (
+              <div className="grid two">
+                <Panel title="Growth Dashboard">
+                  <div className="mini-grid">
+                    <Stat label="Loans by week" value={money.format(model.weekly.reduce((s, x) => s + x.loans, 0))} />
+                    <Stat label="Loans by month" value={money.format(model.monthlyGrowth.reduce((s, x) => s + x.loans, 0))} />
+                    <Stat label="Inventory growth" value={money.format(model.inventoryValue)} tone="amber" />
+                    <Stat label="Profit growth" value={money.format(model.expectedInterest)} tone="green" />
+                  </div>
+                </Panel>
+                <ChartBox title="Monthly growth chart">
+                  <ResponsiveContainer>
+                    <BarChart data={model.monthlyGrowth}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="month" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Legend />
+                      <Bar dataKey="loans" name="Cash deployed" fill="#2563eb" />
+                      <Bar dataKey="recovered" name="Cash recovered" fill="#059669" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <ChartBox title="Cashflow line chart">
+                  <ResponsiveContainer>
+                    <LineChart data={model.monthlyGrowth}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="month" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Legend />
+                      <Line type="monotone" dataKey="loans" name="Cash deployed" stroke="#2563eb" strokeWidth={3} />
+                      <Line type="monotone" dataKey="recovered" name="Cash recovered" stroke="#059669" strokeWidth={3} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <ChartBox title="Profit line chart">
+                  <ResponsiveContainer>
+                    <LineChart data={model.monthlyGrowth}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="month" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Line type="monotone" dataKey="profit" name="Profit growth" stroke="#7c3aed" strokeWidth={3} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+              </div>
+            )}
+
+            {view === "Collections" && (
+              <div className="grid two">
+                <Panel title="Collections Dashboard">
+                  <div className="mini-grid">
+                    <Stat label="Due today" value={money.format(model.dueToday)} />
+                    <Stat label="Due this week" value={money.format(model.due7)} tone="green" />
+                    <Stat label="Due next week" value={money.format(model.dueNextWeek)} tone="amber" />
+                    <Stat label="Overdue" value={money.format(model.overdueAmount)} tone="red" />
+                    <Stat label="Collection rate" value={pct.format(model.collectionRate)} />
+                    <Stat label="Recovery rate" value={pct.format(model.recoveryRate)} />
+                  </div>
+                </Panel>
+                <ChartBox title="Collections trend chart">
+                  <ResponsiveContainer>
+                    <LineChart data={model.dailyForecast.slice(0, 31)}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="date" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Line type="monotone" dataKey="due" name="Due" stroke="#2563eb" strokeWidth={3} />
+                      <Line type="monotone" dataKey="likely" name="Likely collection" stroke="#059669" strokeWidth={3} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <ChartBox title="Overdue borrower bar chart">
+                  <ResponsiveContainer>
+                    <BarChart data={model.overdue.map(l => ({ name: l.client, amount: l.remaining, risk: l.riskScore }))}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="name" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Bar dataKey="amount" fill="#dc2626" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <Panel title="Expected collections calendar">
+                  <div className="table">
+                    {model.loans.filter(l => l.dueDate).sort((a, b) => a.dueDate - b.dueDate).map(loan => (
+                      <div className="row action-row" key={loan.id}>
+                        <span>{loan.dueDate.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</span>
+                        <b>{loan.client}<small>{loan.type} - {money.format(loan.remaining)} remaining</small></b>
+                        <button onClick={() => selectLoan(loan.id)}>Manage</button>
+                      </div>
+                    ))}
+                  </div>
+                </Panel>
+                <Panel title="Actionable Loans">
+                  <div className="loan-action-box">
+                    {model.loans.filter(loan => loan.remaining > 0).sort((a, b) => b.riskScore - a.riskScore || b.remaining - a.remaining).map(loan => (
+                      <button
+                        key={loan.id}
+                        className={selectedLoanId === loan.id ? "loan-chip active-loan" : "loan-chip"}
+                        onClick={() => selectLoan(loan.id)}
+                        style={{ borderColor: loan.risk.color }}
+                      >
+                        <strong>{loan.client}</strong>
+                        <span>{money.format(loan.remaining)} due</span>
+                        <small>{loan.dueDate ? loan.dueDate.toLocaleDateString("en-GB", { day: "2-digit", month: "short" }) : "no due date"} - {loan.risk.label}</small>
+                      </button>
+                    ))}
+                  </div>
+                  <div className="form-grid loan-update-form">
+                    <label>
+                      Repayment amount
+                      <input value={paymentAmount} onChange={event => setPaymentAmount(event.target.value)} placeholder="Example: 200" inputMode="numeric" />
+                    </label>
+                    <label>
+                      Extend due date
+                      <input type="date" value={loanDueDate} onChange={event => setLoanDueDate(event.target.value)} />
+                    </label>
+                    <button onClick={() => applyPayment().catch(error => setWriteStatus(error.message))}>Save Loan Update</button>
+                  </div>
+                  <div className="write-status">{writeStatus}</div>
+                </Panel>
+                <Panel title="All Open Loans">
+                  <div className="table">
+                    {model.loans.filter(loan => loan.remaining > 0).map(loan => (
+                      <div className="row action-row" key={loan.id}>
+                        <span>{loan.type}</span>
+                        <b>{loan.client}<small>{loan.item} - due {loan.dueDate ? loan.dueDate.toLocaleDateString("en-GB") : "missing"} - paid {money.format(loan.paid)}</small></b>
+                        <em>{money.format(loan.remaining)}</em>
+                        <button onClick={() => selectLoan(loan.id)}>Update</button>
+                      </div>
+                    ))}
+                  </div>
+                </Panel>
+              </div>
+            )}
+
+            {view === "Cash" && (
+              <div className="grid two">
+                <Panel title="Cash Forecast Dashboard">
+                  <div className="mini-grid">
+                    <Stat label="Next 7 days" value={money.format(model.due7)} />
+                    <Stat label="Next 30 days" value={money.format(model.due30)} tone="green" />
+                    <Stat label="Next 90 days" value={money.format(model.due90)} tone="amber" />
+                    <Stat label="Overdue recoverable" value={money.format(model.overdueAmount)} tone="red" />
+                  </div>
+                </Panel>
+                <ChartBox title="Repayment forecast chart">
+                  <ResponsiveContainer>
+                    <AreaChart data={model.dailyForecast.slice(0, 31)}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="date" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Legend />
+                      <Area type="monotone" dataKey="best" name="Best case" stroke="#059669" fill="rgba(5,150,105,.2)" />
+                      <Area type="monotone" dataKey="likely" name="Likely case" stroke="#2563eb" fill="rgba(37,99,235,.18)" />
+                      <Area type="monotone" dataKey="worst" name="Worst case" stroke="#dc2626" fill="rgba(220,38,38,.14)" />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <Panel title="Scenario totals">
+                  <div className="scenario">
+                    <div><span>Best case 30 days</span><strong>{money.format(model.due30)}</strong></div>
+                    <div><span>Likely case 30 days</span><strong>{money.format(model.due30 * 0.68)}</strong></div>
+                    <div><span>Worst case 30 days</span><strong>{money.format(model.due30 * 0.35)}</strong></div>
+                  </div>
+                </Panel>
+              </div>
+            )}
+
+            {view === "Profit" && (
+              <div className="grid two">
+                <Panel title="Profit Forecast Dashboard">
+                  <div className="mini-grid">
+                    <Stat label="Principal outstanding" value={money.format(model.principalOutstanding)} />
+                    <Stat label="Expected repayment" value={money.format(model.expectedRepayment)} tone="green" />
+                    <Stat label="Expected interest" value={money.format(model.expectedInterest)} tone="green" />
+                    <Stat label="Inventory value" value={money.format(model.inventoryValue)} tone="amber" />
+                    <Stat label="Sales earned" value={money.format(model.salesEarned)} tone="green" />
+                    <Stat label="Sales profit" value={money.format(model.salesProfit)} tone="green" />
+                    <Stat label="Damaged/stolen losses" value={money.format(model.lossValue)} tone="red" />
+                    <Stat label="Expected net profit" value={money.format(model.expectedNetProfit)} />
+                  </div>
+                </Panel>
+                <ChartBox title="Profit forecast area chart">
+                  <ResponsiveContainer>
+                    <AreaChart data={model.monthlyGrowth}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="month" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Area type="monotone" dataKey="profit" stroke="#7c3aed" fill="rgba(124,58,237,.22)" />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+              </div>
+            )}
+
+            {view === "Inventory" && (
+              <div className="grid two">
+                <Panel title="Inventory Intelligence">
+                  <div className="mini-grid">
+                    <Stat label="Available inventory" value={money.format(model.inventoryValue)} />
+                    <Stat label="Sales earned" value={money.format(model.salesEarned)} tone="green" />
+                    <Stat label="Sales profit" value={money.format(model.salesProfit)} tone="green" />
+                    <Stat label="Inventory turnover" value={`${Math.round((model.soldInventory.length / Math.max(model.inventory.length, 1)) * 100)}%`} />
+                    <Stat label="Slow moving" value={`${model.slowMoving.length} items`} tone="amber" />
+                    <Stat label="Discount candidates" value={`${model.discountItems.length} items`} tone="red" />
+                  </div>
+                </Panel>
+                <ChartBox title="Inventory category pie chart">
+                  <ResponsiveContainer>
+                    <PieChart>
+                      <Pie data={model.byCategory} dataKey="value" nameKey="name" outerRadius={100} label>
+                        {model.byCategory.map((entry, index) => <Cell key={entry.name} fill={colors[index % colors.length]} />)}
+                      </Pie>
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Legend />
+                    </PieChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <ChartBox title="Inventory aging">
+                  <ResponsiveContainer>
+                    <BarChart data={model.inventoryAging}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="bucket" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Bar dataKey="value" fill="#f59e0b" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+                <Panel title="Mark Inventory Sold">
+                  <div className="form-grid inventory-sale-form sale-grid">
+                    <label>
+                      Item
+                      <select value={selectedInventoryId} onChange={event => selectInventoryItem(event.target.value)}>
+                        <option value="">Choose inventory item</option>
+                        {model.availableInventory.map(item => (
+                          <option key={item.id} value={item.id}>
+                            {item.product} - listed {money.format(item.value)} - pawned {item.pawnAmount ? money.format(item.pawnAmount) : "missing"}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      Sell price
+                      <input value={sellPrice} onChange={event => setSellPrice(event.target.value)} placeholder="Example: 2500" inputMode="numeric" />
+                    </label>
+                    <label>
+                      Pawned for
+                      <input value={pawnedAmount} onChange={event => setPawnedAmount(event.target.value)} placeholder="Original pawn amount" inputMode="numeric" />
+                    </label>
+                    <button onClick={() => applyInventorySale().catch(error => setWriteStatus(error.message))}>Mark Sold</button>
+                  </div>
+                  <div className="write-status">{writeStatus}</div>
+                </Panel>
+                <Panel title="Actionable Inventory">
+                  <div className="table">
+                    {[...model.availableInventory].sort((a, b) => b.value - a.value).map(item => (
+                      <div className="row action-row" key={item.id}>
+                        <span>{item.category}</span>
+                        <b>{item.product}<small> Listed {money.format(item.value)} - pawned {item.pawnAmount ? money.format(item.pawnAmount) : "missing"}{item.age !== null ? ` - ${item.age} days` : " - no date"}</small></b>
+                        <button onClick={() => selectInventoryItem(item.id, true)}>Sell</button>
+                      </div>
+                    ))}
+                  </div>
+                </Panel>
+                <Panel title="Sales Log">
+                  <div className="table detail-table">
+                    {model.soldInventory.length ? model.soldInventory.map(item => (
+                      <div className="detail-row sales-detail-row" key={item.id}>
+                        <div>
+                          <strong>{item.product}</strong>
+                          <span>{item.category} - {item.pawnAmountSource}</span>
+                        </div>
+                        <div><small>Pawned</small><b>{money.format(item.pawnAmount || item.costBasis)}</b></div>
+                        <div><small>Expected</small><b>{item.expectedRepayment ? money.format(item.expectedRepayment) : "Missing"}</b></div>
+                        <div><small>Listed</small><b>{money.format(item.value)}</b></div>
+                        <div><small>Sold</small><b>{money.format(item.sold)}</b></div>
+                        <div><small>Profit</small><b>{money.format(item.profit)}</b></div>
+                        <div><small>Date given</small><b>{item.dateGiven ? item.dateGiven.toLocaleDateString("en-GB") : "Missing"}</b></div>
+                        <div><small>Days held</small><b>{item.daysHeld === null ? "Missing" : `${item.daysHeld} days`}</b></div>
+                      </div>
+                    )) : <div className="empty-state">No sold inventory logged yet.</div>}
+                  </div>
+                </Panel>
+              </div>
+            )}
+
+            {view === "Active Pawns" && (
+              <div className="grid two">
+                <Panel title="Active Pawns">
+                  <div className="mini-grid">
+                    <Stat label="Active principal" value={money.format(model.active.reduce((sum, loan) => sum + loan.loan, 0))} />
+                    <Stat label="Expected payback" value={money.format(model.active.reduce((sum, loan) => sum + loan.total, 0))} tone="green" />
+                    <Stat label="Interest income" value={money.format(model.active.reduce((sum, loan) => sum + loan.interest, 0))} tone="green" />
+                    <Stat label="Remaining balance" value={money.format(model.active.reduce((sum, loan) => sum + loan.remaining, 0))} tone="amber" />
+                  </div>
+                </Panel>
+                <Panel title="Update Active Pawn">
+                  <div className="form-grid loan-update-form">
+                    <label>
+                      Pawn
+                      <select value={selectedLoanId} onChange={event => selectLoan(event.target.value)}>
+                        <option value="">Choose active pawn</option>
+                        {model.active.filter(loan => loan.remaining > 0).map(loan => (
+                          <option key={loan.id} value={loan.id}>
+                            {loan.item} - {money.format(loan.remaining)} remaining
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      Repayment amount
+                      <input value={paymentAmount} onChange={event => setPaymentAmount(event.target.value)} placeholder="Example: 200" inputMode="numeric" />
+                    </label>
+                    <label>
+                      Extend due date
+                      <input type="date" value={loanDueDate} onChange={event => setLoanDueDate(event.target.value)} />
+                    </label>
+                    <button onClick={() => applyPayment().catch(error => setWriteStatus(error.message))}>Save Pawn Update</button>
+                  </div>
+                  <div className="write-status">{writeStatus}</div>
+                </Panel>
+                <Panel title="Active Pawn Details">
+                  <div className="table detail-table">
+                    {model.active.map(loan => (
+                      <div className="detail-row" key={loan.id}>
+                        <div>
+                          <strong>{loan.item}</strong>
+                          <span>{loan.client} - {loan.location || "No location"} - {loan.risk.label}</span>
+                        </div>
+                        <div><small>Loan</small><b>{money.format(loan.loan)}</b></div>
+                        <div><small>Interest</small><b>{money.format(loan.interest)}</b></div>
+                        <div><small>Payback</small><b>{money.format(loan.total)}</b></div>
+                        <div><small>Paid</small><b>{money.format(loan.paid)}</b></div>
+                        <div><small>Remaining</small><b>{money.format(loan.remaining)}</b></div>
+                        <div><small>Given</small><b>{loan.dateGiven ? loan.dateGiven.toLocaleDateString("en-GB") : "Missing"}</b></div>
+                        <div><small>Due</small><b>{loan.dueDate ? loan.dueDate.toLocaleDateString("en-GB") : "Missing"}</b></div>
+                        <button onClick={() => selectLoan(loan.id)}>Edit</button>
+                      </div>
+                    ))}
+                  </div>
+                </Panel>
+                <ChartBox title="Active pawn balances">
+                  <ResponsiveContainer>
+                    <BarChart data={model.active.map(loan => ({ name: loan.item.slice(0, 18), balance: loan.remaining, payback: loan.total }))}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="name" />
+                      <YAxis />
+                      <Tooltip formatter={v => money.format(v)} />
+                      <Legend />
+                      <Bar dataKey="balance" name="Remaining" fill="#f59e0b" />
+                      <Bar dataKey="payback" name="Expected payback" fill="#2563eb" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+              </div>
+            )}
+
+            {view === "Loans" && (
+              <div className="grid two">
+                <Panel title="Loan Management">
+                  <div className="risk-list">
+                    {model.loans.filter(l => l.remaining > 0).sort((a, b) => b.riskScore - a.riskScore).map(loan => (
+                      <button className="risk-card clickable-card" key={loan.id} onClick={() => selectLoan(loan.id)} style={{ borderColor: loan.risk.color, background: loan.risk.fill }}>
+                        <div>
+                          <b>{loan.client}</b>
+                          <span>{loan.type} · {loan.overdueDays > 0 ? `${loan.overdueDays} days overdue` : "on schedule"}</span>
+                        </div>
+                        <strong style={{ color: loan.risk.color }}>{loan.riskScore}</strong>
+                        <em>{loan.risk.label}</em>
+                        <small>{money.format(loan.remaining)} remaining</small>
+                      </button>
+                    ))}
+                  </div>
+                </Panel>
+                <Panel title="Edit Selected Loan">
+                  <div className="form-grid loan-update-form">
+                    <label>
+                      Repayment amount
+                      <input value={paymentAmount} onChange={event => setPaymentAmount(event.target.value)} placeholder="Example: 200" inputMode="numeric" />
+                    </label>
+                    <label>
+                      Extend due date
+                      <input type="date" value={loanDueDate} onChange={event => setLoanDueDate(event.target.value)} />
+                    </label>
+                    <button onClick={() => applyPayment().catch(error => setWriteStatus(error.message))}>Save Loan Update</button>
+                  </div>
+                  <div className="write-status">{writeStatus}</div>
+                </Panel>
+                <ChartBox title="Borrower risk scores">
+                  <ResponsiveContainer>
+                    <BarChart data={model.loans.filter(l => l.remaining > 0).map(l => ({ name: l.client, score: l.riskScore }))}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="name" />
+                      <YAxis domain={[0, 100]} />
+                      <Tooltip />
+                      <Bar dataKey="score">
+                        {model.loans.filter(l => l.remaining > 0).map((loan) => <Cell key={loan.id} fill={loan.risk.color} />)}
+                      </Bar>
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartBox>
+              </div>
+            )}
+
+            {view === "Live" && (
+              <div className="grid ai-grid">
+                <Panel title="Live Google Sheets Control">
+                  <div className="live-status">
+                    <strong>{liveStatus}</strong>
+                    <span>Last sync: {lastSync || "waiting for backend"}</span>
+                    <button onClick={() => refreshSheetData()}>Refresh</button>
+                  </div>
+                  <div className="form-grid">
+                    <label>
+                      Borrower
+                      <select value={selectedLoanId} onChange={event => selectLoan(event.target.value)}>
+                        <option value="">Choose borrower</option>
+                        {model.loans.filter(loan => loan.remaining > 0).map(loan => (
+                          <option key={loan.id} value={loan.id}>
+                            {loan.client} · {money.format(loan.remaining)} remaining
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      Payment amount
+                      <input value={paymentAmount} onChange={event => setPaymentAmount(event.target.value)} placeholder="Example: 200" inputMode="numeric" />
+                    </label>
+                    <label>
+                      Extend due date
+                      <input type="date" value={loanDueDate} onChange={event => setLoanDueDate(event.target.value)} />
+                    </label>
+                    <button onClick={() => applyPayment().catch(error => setWriteStatus(error.message))}>Save Loan To Sheet</button>
+                  </div>
+                  <div className="form-grid inventory-sale-form sale-grid">
+                    <label>
+                      Inventory item
+                      <select value={selectedInventoryId} onChange={event => selectInventoryItem(event.target.value)}>
+                        <option value="">Choose inventory item</option>
+                        {model.availableInventory.map(item => (
+                          <option key={item.id} value={item.id}>
+                            {item.product} - listed {money.format(item.value)} - pawned {item.pawnAmount ? money.format(item.pawnAmount) : "missing"}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      Sell price
+                      <input value={sellPrice} onChange={event => setSellPrice(event.target.value)} placeholder="Example: 2500" inputMode="numeric" />
+                    </label>
+                    <label>
+                      Pawned for
+                      <input value={pawnedAmount} onChange={event => setPawnedAmount(event.target.value)} placeholder="Original pawn amount" inputMode="numeric" />
+                    </label>
+                    <button onClick={() => applyInventorySale().catch(error => setWriteStatus(error.message))}>Mark Sold To Sheet</button>
+                  </div>
+                  <div className="write-status">{writeStatus}</div>
+                </Panel>
+
+                <Panel title="Hands-Free Assistant Input">
+                  <label className="command-box">
+                    Tell ChatGPT or Claude what to do
+                    <textarea value={assistantInput} onChange={event => setAssistantInput(event.target.value)} placeholder="Example: Rose paid 200, record it" />
+                  </label>
+                  <div className="button-row">
+                    <button onClick={() => runAssistantCommand().catch(error => setWriteStatus(error.message))}>Run Assistant</button>
+                    <button onClick={() => confirmAssistantAction().catch(error => setWriteStatus(error.message))} disabled={!assistantAction || !["add_payment", "mark_inventory_sold"].includes(assistantAction.type)}>Confirm Sheet Edit</button>
+                  </div>
+                  {assistantAction && (
+                    <div className="assistant-card">
+                      <strong>{assistantAction.message}</strong>
+                      <span>{assistantAction.type === "add_payment" ? "This can update Amount Paid, Remaining Balance, and Due Date in NEW ONE after confirmation." : assistantAction.type === "mark_inventory_sold" ? "This will mark the item Sold, log Sell amount, log Profit/loss, and remove it from available inventory value." : "No sheet write is pending."}</span>
+                    </div>
+                  )}
+                  <div className="commands">
+                    <span>Rose paid 200</span>
+                    <span>Rose paid 200 extended to 2026-06-30</span>
+                    <span>sell microwave for 450</span>
+                    <span>show overdue loans</span>
+                    <span>show profit forecast</span>
+                    <span>analyze business</span>
+                  </div>
+                </Panel>
+              </div>
+            )}
+
+            {view === "AI" && (
+              <div className="grid ai-grid">
+                <Panel title="AI Analysis">
+                  <div className="ai-buttons">
+                    {Object.keys(aiActions).map(action => <button key={action} onClick={aiActions[action]}>{action}</button>)}
+                  </div>
+                  <p className="ai-status">{aiStatus}</p>
+                  <div className="analysis">{analysis}</div>
+                  <p className="note">Buttons call the local AI bridge when it is running. Without keys, the dashboard still uses the same financial model locally.</p>
+                </Panel>
+                <Panel title="Hands-Free Mode">
+                  <div className="voice-box">
+                    <strong>{listening ? "Continuous listening is active" : "Voice engine waiting"}</strong>
+                    <span>Last heard: {lastCommand}</span>
+                  </div>
+                  <div className="commands">
+                    {Object.keys(voiceActions).map(command => <span key={command}>{command}</span>)}
+                  </div>
+                </Panel>
+              </div>
+            )}
+          </main>
+        );
+      }
+
+      createRoot(document.getElementById("root")).render(<App />);
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f5f7fb;
+        color: #172033;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-width: 320px; }
+      main { width: min(1440px, 100%); margin: 0 auto; padding: 22px; }
+      .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0 18px; }
+      .topbar p { margin: 0 0 4px; color: #2563eb; font-weight: 800; text-transform: uppercase; font-size: 12px; letter-spacing: .08em; }
+      .topbar h1 { margin: 0; font-size: clamp(28px, 4vw, 46px); line-height: 1.05; letter-spacing: 0; }
+      .sync-pill { display: inline-flex; align-items: center; gap: 9px; padding: 10px 13px; border: 1px solid #d9e2f2; border-radius: 8px; background: white; color: #475569; font-weight: 650; white-space: nowrap; }
+      .pulse { width: 10px; height: 10px; border-radius: 999px; background: #94a3b8; display: inline-block; }
+      .pulse.on { background: #10b981; box-shadow: 0 0 0 5px rgba(16,185,129,.16); }
+      .tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 14px; }
+      button { border: 0; border-radius: 8px; padding: 10px 13px; background: #e8eef8; color: #273449; font-weight: 750; cursor: pointer; }
+      button:hover { background: #dbe6f7; }
+      button.active, .ai-buttons button:hover { background: #172033; color: white; }
+      .summary-grid, .mini-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+      .mini-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stat { min-height: 105px; border-radius: 8px; padding: 15px; background: white; border: 1px solid #dfe7f3; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(24,38,66,.06); }
+      .stat span { color: #667085; font-size: 13px; font-weight: 750; }
+      .stat strong { font-size: clamp(21px, 2.3vw, 34px); letter-spacing: 0; }
+      .stat small { color: #718096; font-weight: 650; }
+      .stat-blue { border-top: 4px solid #2563eb; }
+      .stat-green { border-top: 4px solid #059669; }
+      .stat-amber { border-top: 4px solid #f59e0b; }
+      .stat-red { border-top: 4px solid #dc2626; }
+      .grid { display: grid; gap: 14px; margin-top: 14px; }
+      .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+      .panel, .chart-box { background: white; border: 1px solid #dfe7f3; border-radius: 8px; padding: 16px; box-shadow: 0 8px 24px rgba(24,38,66,.06); }
+      .panel-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+      h2, h3 { margin: 0 0 14px; letter-spacing: 0; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 16px; color: #344054; }
+      .chart-area { height: 330px; min-width: 0; }
+      .table { display: grid; gap: 8px; max-height: 330px; overflow: auto; }
+      .row { display: grid; grid-template-columns: 115px 1fr auto; gap: 12px; align-items: center; padding: 10px; border-radius: 8px; background: #f8fafc; }
+      .row span { color: #667085; font-size: 13px; }
+      .row b { display: grid; gap: 2px; }
+      .row small { color: #667085; font-weight: 650; }
+      .row em { font-style: normal; font-weight: 800; color: #172033; }
+      .action-row { grid-template-columns: 115px 1fr auto auto; }
+      .action-row button { min-width: 78px; }
+      .scenario { display: grid; gap: 10px; }
+      .scenario div { display: flex; justify-content: space-between; gap: 10px; padding: 14px; border-radius: 8px; background: #f8fafc; }
+      .scenario span { color: #667085; font-weight: 750; }
+      .live-status { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; padding: 12px; background: #f8fafc; border: 1px solid #e3eaf5; border-radius: 8px; margin-bottom: 14px; }
+      .live-status span { color: #667085; font-weight: 650; }
+      .form-grid { display: grid; grid-template-columns: 1.35fr .65fr .65fr auto; gap: 10px; align-items: end; }
+      .loan-update-form { margin-top: 14px; }
+      .sale-grid { grid-template-columns: 1.4fr .65fr .65fr auto; }
+      .inventory-sale-form { margin-top: 12px; }
+      label { display: grid; gap: 6px; color: #475569; font-weight: 800; }
+      select, input, textarea { width: 100%; border: 1px solid #cfd9ea; border-radius: 8px; padding: 11px 12px; font: inherit; color: #172033; background: white; }
+      textarea { min-height: 124px; resize: vertical; }
+      button:disabled { opacity: .45; cursor: not-allowed; }
+      .write-status, .assistant-card { margin-top: 12px; border-radius: 8px; border: 1px solid #dce6f5; background: #f8fafc; padding: 12px; color: #334155; font-weight: 700; }
+      .command-box { margin-bottom: 10px; }
+      .button-row { display: flex; flex-wrap: wrap; gap: 10px; }
+      .assistant-card { display: grid; gap: 5px; }
+      .assistant-card span { color: #667085; font-weight: 650; }
+      .empty-state { border-radius: 8px; background: #f8fafc; border: 1px dashed #cfd9ea; color: #667085; font-weight: 750; padding: 16px; }
+      .loan-action-box { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; max-height: 320px; overflow: auto; }
+      .loan-chip { display: grid; gap: 4px; text-align: left; background: #f8fafc; border: 1px solid #dfe7f3; color: #172033; }
+      .loan-chip strong { font-size: 15px; }
+      .loan-chip span, .loan-chip small { color: #475569; font-weight: 750; }
+      .loan-chip.active-loan { background: #172033; color: white; }
+      .loan-chip.active-loan span, .loan-chip.active-loan small { color: #dbeafe; }
+      .risk-list { display: grid; gap: 10px; }
+      .risk-card { display: grid; grid-template-columns: 1fr auto auto auto; gap: 12px; align-items: center; border: 1px solid; border-radius: 8px; padding: 12px; }
+      .clickable-card { text-align: left; background: white; width: 100%; }
+      .risk-card div { display: grid; gap: 3px; }
+      .risk-card span, .risk-card small, .risk-card em { color: #475569; font-style: normal; }
+      .risk-card strong { font-size: 24px; }
+      .detail-table { gap: 10px; }
+      .detail-row { display: grid; grid-template-columns: minmax(220px, 1.7fr) repeat(7, minmax(78px, .65fr)) auto; gap: 10px; align-items: center; padding: 12px; border-radius: 8px; background: #f8fafc; border: 1px solid #e3eaf5; }
+      .sales-detail-row { grid-template-columns: minmax(220px, 1.6fr) repeat(7, minmax(82px, .65fr)); }
+      .detail-row > div { display: grid; gap: 2px; }
+      .detail-row strong { font-size: 14px; }
+      .detail-row span, .detail-row small { color: #667085; font-weight: 700; font-size: 12px; }
+      .detail-row b { font-size: 13px; }
+      .ai-grid { grid-template-columns: 1.2fr .8fr; }
+      .ai-buttons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-bottom: 14px; }
+      .analysis { min-height: 160px; border-radius: 8px; background: #f8fafc; border: 1px solid #e3eaf5; padding: 16px; font-size: 18px; line-height: 1.5; }
+      .note { color: #667085; font-size: 13px; font-weight: 650; }
+      .voice-box { display: grid; gap: 7px; padding: 14px; border-radius: 8px; background: #eefbf5; border: 1px solid #bfe9d2; margin-bottom: 14px; }
+      .commands { display: flex; flex-wrap: wrap; gap: 8px; }
+      .commands span { background: #eef2ff; border: 1px solid #dce3ff; border-radius: 999px; padding: 8px 10px; color: #334155; font-weight: 700; font-size: 13px; }
+      @media (max-width: 980px) {
+        main { padding: 14px; }
+        .topbar { align-items: flex-start; flex-direction: column; }
+        .summary-grid, .mini-grid, .grid.two, .ai-grid, .ai-buttons { grid-template-columns: 1fr; }
+        .form-grid, .live-status { grid-template-columns: 1fr; }
+        .chart-area { height: 300px; }
+        .row, .risk-card, .detail-row { grid-template-columns: 1fr; }
+        .sync-pill { white-space: normal; }
+      }
+    </style>
+  </body>
+</html>

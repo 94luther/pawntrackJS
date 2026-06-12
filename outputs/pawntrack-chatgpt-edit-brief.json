@@ -1,0 +1,72 @@
+{
+  "project": "PawnTrack",
+  "purpose": "Pawnshop operations app connected to live Google Sheets data.",
+  "current_live_url": "http://127.0.0.1:8803/",
+  "data_source": {
+    "type": "Google Sheets",
+    "spreadsheet_name": "NEW ONE",
+    "live_read_write_enabled": true,
+    "main_tabs": [
+      "Company Owned Items",
+      "OS Debts",
+      "Active Pawns",
+      "Damaged goods"
+    ]
+  },
+  "current_features": [
+    "Growth dashboard",
+    "Collections dashboard",
+    "Cash forecast dashboard",
+    "Profit forecast dashboard",
+    "Inventory intelligence",
+    "Active pawns section",
+    "Loan management section",
+    "Borrower risk scoring",
+    "Inventory sold workflow",
+    "Loan repayment workflow",
+    "Due date extension workflow",
+    "AI analysis buttons",
+    "Hands-free voice command shell"
+  ],
+  "current_actions": {
+    "inventory_sale": {
+      "description": "Mark inventory item as sold and write sale data back to Google Sheets.",
+      "tracks": [
+        "item",
+        "listed price",
+        "pawned amount",
+        "sell price",
+        "profit/loss",
+        "sale date",
+        "date given",
+        "expected repayment",
+        "days held"
+      ]
+    },
+    "loan_update": {
+      "description": "Update a pawn or debt after repayment or extension.",
+      "tracks": [
+        "repayment amount",
+        "amount paid",
+        "remaining balance",
+        "due date"
+      ]
+    }
+  },
+  "desired_new_direction": {
+    "summary": "",
+    "notes_for_chatgpt": "Fill this section with the direction you want, for example: make the app more like a daily operations command center, reduce charts, prioritize actions due today, add customer messaging, or focus on inventory sales."
+  },
+  "ask_chatgpt_to_return": [
+    "Recommended app screens",
+    "Daily workflow",
+    "Data fields to add",
+    "Google Sheets changes needed",
+    "Database tables needed",
+    "AI assistant commands",
+    "Voice commands",
+    "UI layout recommendations",
+    "Risks or missing logic"
+  ],
+  "prompt": "You are helping redesign my PawnTrack pawnshop app. Use this JSON as the current app context. Suggest a practical new direction, exact app screens, workflows, data fields, Google Sheets changes, database tables, AI commands, and a clean daily-use UI. Keep the result specific to pawnshop operations."
+}

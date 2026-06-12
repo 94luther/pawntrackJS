@@ -1,0 +1,23 @@
+{
+  "name": "pawntrack-live-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "backend": "node server/googleSheetsBridge.mjs",
+    "start": "concurrently \"npm run backend\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {}
+}

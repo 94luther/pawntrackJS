@@ -1,0 +1,2 @@
+PawnTrack dashboard running at http://localhost:8787
+Set OPENAI_API_KEY and ANTHROPIC_API_KEY to enable ChatGPT + Claude analysis.
